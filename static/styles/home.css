@@ -1,0 +1,79 @@
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+
+  
+    
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+    background-color: rgb(181, 245, 168);
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+    background-color: rgb(244, 247, 119);
+    text-align: center;
+    
+    
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+   
+ 
+  }
+  
+  /* Style the image inside the centered container, if needed */
+
+  .text_editor {
+    border: 5px solid #4CAF50;
+    width: 80%;
+    height : 300px;
+    box-sizing:border-box;
+    margin-left:10%;
+    margin-right:10%;
+    border-radius: 5px;
+}
+
+.btn {
+
+  width: 100px;
+  height: 50px;
+  background-color: #29e658;
+  border-style: dashed;
+  border-width: medium;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.title{
+  font-family: Arial;
+}
+
+.text_editor_1 {
+  border: 3px solid #769df0;
+  width: 80%;
+  box-sizing:border-box;
+  margin-left:10%;
+  margin-right:10%;
+  border-radius: 5px;
+  top: 20px;
+}
+

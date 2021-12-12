@@ -1,0 +1,30 @@
+<html>
+    <head><link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/home.css') }}"></head>
+   <body>
+       
+    <div class="split left">
+        <div class="centered">
+            <h1 class="title"> PASTE-BIN [ LITE ] </h1>
+
+            <form action="{{ url_for('insert') }}" method="post" required="required" >
+               
+                <textarea id="code" name="code"  class="text_editor"></textarea>
+                  <br><br>
+                  <input class="btn" type="submit" value="SUBMIT">
+            </form>
+            
+        </div>
+      </div>
+      
+      <div class="split right">
+        <h2>😁 See what others pasted 😁</h2>
+        <hr>
+        {%for i in paste %}
+        <textarea readonly id="code1" name="code1"  rows=9 class="text_editor_1" wrap="soft">{{ i['data'] }}</textarea>
+        <h5>created at : {{ i['created_at'] }}</h5>
+        <hr>
+       {%endfor%}
+        
+      </div>
+   </body>
+</html>
